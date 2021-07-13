@@ -1,0 +1,230 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+
+/*---------------
+ common property
+ --------------- */
+body{
+    background-color:#F3F1FF;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    background-color: #fff;
+    width: 870px;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 6px;
+}
+.section-title{
+    color: #562EFF;
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 3px;
+    margin-bottom: 40px;
+}
+
+/* --------------
+header-area
+--------------------- */
+header{
+    height: 94px;
+    background-color: #562EFF;
+    margin-bottom: 36px;
+}
+nav{
+    display: flex;
+    width: 870px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    height: 94px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 41px;
+    height: 51px;
+}
+.logo-text{
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+    margin-left: 16px;
+}
+.profile-menu{
+    display: flex;
+}
+ul.menu{
+    list-style: none;
+}
+ul.menu li{
+    margin: 0 18px;
+    display: inline-block;
+}
+ul.menu li a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+}
+.profile-img{
+    width: 51px;
+    height: 51px;
+    margin-left: 18px;
+}
+
+/*-----------------------------
+ top players and top blogs
+ ----------------------------- */
+ .top-players{
+     margin-bottom: 22px;
+ }
+ .players{
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
+     grid-row-gap: 29px;
+ }
+ .player{
+     display: flex;
+     align-items: center;
+ }
+ .player img{
+     width: 56px;
+     height: 56px;
+ }
+ .player-name{
+    margin-left: 16px;
+    font-size: 18px;
+    font-weight: 500;
+ }
+ hr{
+     border: 1px solid #D1D1D1;
+ }
+ .top-blogs{
+     margin-top: 20px;
+ }
+ .blogs{
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+     grid-row-gap: 26px;
+     grid-column-gap: 80px;
+ }
+
+.blog{
+    display: flex;
+    align-items: center;
+}
+.thumbnail img{
+    width: 177px;
+    height: 117px;
+}
+.blog-details{
+    margin-left: 16px;
+}
+.blog-title{
+    font-size: 20px;
+    font-weight: 500;
+}
+.author{
+    font-size: 16px;
+    font-weight: 400;
+    color: #9F9F9F;
+}
+.author a{
+    text-decoration: none;
+    color:#562EFF;
+}
+
+/*------------------
+ latest courses
+ ------------------- */
+ .course-img img{
+     width: 224px;
+     height: 104px;
+ }
+ .courses{
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
+     grid-column-gap: 23px;
+ }
+ .course{
+     width: 252px;
+     height: 270px;
+     box-shadow:0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05);
+     background-color: #fff;
+     border-radius: 10px;
+     padding: 13px;
+ }
+ 
+ .course-title-1,.title-2{
+     font-weight: 500;
+ }
+ .course-title-1{
+     margin-bottom: 5px;
+ }
+ .title-2{
+     margin:0;
+ }
+ .course-author a{
+     color: #ED6B4F;
+     font-size: 14px;
+     font-weight: 400;
+     margin-top: 6px;
+     margin-bottom: 20px;
+     text-decoration: none;
+ }
+ .course-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.rating .fas{
+    color: #FFC014;
+    font-size: 12px;
+}
+.rating .not-filled{
+    color: #AEAEAE;
+}
+.rating span{
+    color: #A2A2A2;
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+.hour{
+    width: 95px;
+    height: 29px;
+    display: flex;
+    align-items: center;
+    background: #FEE5DF;
+    border-radius: 14.6913px;
+    justify-content: space-evenly;
+}
+.hour img{
+    width: 20px;
+    height: 20px;
+}
+.hour span{
+    font-size: 14px;
+    font-weight: 600;
+    color: #ED6B4F;
+}
+/*-------------------
+ responsive-area
+ ------------------------ */
+
+ @media only screen (max-width:480px){ 
+     nav{
+         width: 100%;
+     }
+ }
